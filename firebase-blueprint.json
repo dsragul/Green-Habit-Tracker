@@ -1,0 +1,63 @@
+{
+  "entities": {
+    "appState": {
+      "title": "App State",
+      "description": "Global application state including habits, user stats, activities, leaderboard, and rewards",
+      "type": "object",
+      "properties": {
+        "userProfile": { "type": "object" },
+        "dashboardStats": { "type": "object" },
+        "habitTasks": { "type": "array" },
+        "rewards": { "type": "array" },
+        "activities": { "type": "array" },
+        "leaderboard": { "type": "array" },
+        "badges": { "type": "array" },
+        "chatMessages": { "type": "array" }
+      }
+    },
+    "users": {
+      "title": "Users",
+      "description": "User profiles and progress",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "points": { "type": "number" },
+        "level": { "type": "number" }
+      }
+    },
+    "activities": {
+      "title": "Activities",
+      "description": "Logged eco activities and completions",
+      "type": "object"
+    },
+    "tasks": {
+      "title": "Habit Tasks",
+      "description": "Green habit tasks available to users",
+      "type": "object"
+    }
+  },
+  "securityRules": [
+    {
+      "collection": "appState",
+      "read": "true",
+      "write": "true"
+    },
+    {
+      "collection": "users",
+      "read": "true",
+      "write": "true"
+    },
+    {
+      "collection": "activities",
+      "read": "true",
+      "write": "true"
+    },
+    {
+      "collection": "tasks",
+      "read": "true",
+      "write": "true"
+    }
+  ]
+}

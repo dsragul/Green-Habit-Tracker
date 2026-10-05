@@ -1,0 +1,6 @@
+{
+  "name": "AI Green Habit Tracker",
+  "description": "Empowering sustainable living with AI-powered habit tracking, verification, rewards, interactive analytics, leaderboards, and personalized sustainability guidance.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
